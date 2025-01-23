@@ -26,7 +26,13 @@ const calculator = {
 }
 
 function caesarCipher(string, key) {
-  return 'hello';
+  const stringArr = string.split('');
+  for (let i = 0; i < stringArr.length; i += 1) {
+    let letter = stringArr[i].charCodeAt(0);
+    letter += key;
+    stringArr[i] = String.fromCharCode(letter);
+  }
+  return stringArr.join('');
 }
 
 export { capitalize, reverseString, calculator, caesarCipher };
