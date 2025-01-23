@@ -12,16 +12,16 @@ function reverseString(string) {
 
 const calculator = {
   sum: function(a, b) {
-    return 4;
+    return a + b;
   },
   subtract: function(a, b) {
-    return 4;
+    return a - b;
   },
   divide: function(a, b) {
-    return 4;
+    return a / b;
   },
   multiply: function(a, b) {
-    return 7;
+    return a * b;
   }
 }
 
