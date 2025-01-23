@@ -52,12 +52,17 @@ function caesarCipher(string, key) {
 }
 
 function analyzeArray(array) {
-  const obj = {
-    average: 9,
-    min: 1,
-    max: 7,
-    length: 6
-  }
+  // Returns the minimum number of the parameters provided
+  const min = Math.min(...array);
+
+  // Returns the maximum number of the parameters provided
+  const max = Math.max(...array);
+
+  const length = array.length;
+  const average = (array.reduce((total, current) =>
+    total + current, 0)) / length;
+  
+  const obj = { min, max, length, average };
 
   return obj;
 }
