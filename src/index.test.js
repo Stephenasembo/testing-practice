@@ -16,5 +16,6 @@ test('Calculator functions', () => {
 })
 
 test('Caesar cipher implemented correctly', () => {
-  expect(caesarCipher('hello', 3)).toBe('khoor')
+  expect(caesarCipher('hello', 3)).toBe('khoor');
+  expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
 })
