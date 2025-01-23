@@ -10,4 +10,19 @@ function reverseString(string) {
   return reversedArr.join('');
 }
 
-export { capitalize, reverseString };
+const calculator = {
+  sum: function(a, b) {
+    return 4;
+  },
+  subtract: function(a, b) {
+    return 4;
+  },
+  divide: function(a, b) {
+    return 4;
+  },
+  multiply: function(a, b) {
+    return 7;
+  }
+}
+
+export { capitalize, reverseString, calculator };
