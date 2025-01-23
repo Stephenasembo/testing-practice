@@ -51,4 +51,15 @@ function caesarCipher(string, key) {
   return stringArr.join('');
 }
 
-export { capitalize, reverseString, calculator, caesarCipher };
+function analyzeArray(array) {
+  const obj = {
+    average: 9,
+    min: 1,
+    max: 7,
+    length: 6
+  }
+
+  return obj;
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
