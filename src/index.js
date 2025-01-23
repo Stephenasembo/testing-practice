@@ -4,4 +4,8 @@ function capitalize(string) {
   return stringArr.join('');
 }
 
-export default capitalize;
+function reverseString(string) {
+  return string;
+}
+
+export { capitalize, reverseString };
