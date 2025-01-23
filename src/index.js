@@ -37,11 +37,15 @@ function caesarCipher(string, key) {
     if (index !== -1) {
       let newLetterIndex = index + key;
       stringArr[i] = lowerCaseLetters[newLetterIndex];
-    } else {
+    } else if (index === -1) {
       // If it is not lowercase look in the uppercase array
       index = upperCaseLetters.findIndex(alphabet => letter === alphabet);
-      let newLetterIndex = index + key;
-      stringArr[i] = upperCaseLetters[newLetterIndex];
+      if (index !== -1) {
+        let newLetterIndex = index + key;
+        stringArr[i] = upperCaseLetters[newLetterIndex];
+      } else {
+          stringArr[i] = stringArr[i];
+      }
     }
   }
   return stringArr.join('');
