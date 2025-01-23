@@ -35,13 +35,13 @@ function caesarCipher(string, key) {
     let index = lowerCaseLetters.findIndex(alphabet => letter === alphabet);
     // Check if letter is lowercase
     if (index !== -1) {
-      let newLetterIndex = index + key;
+      let newLetterIndex = (index + key) % 26;
       stringArr[i] = lowerCaseLetters[newLetterIndex];
     } else if (index === -1) {
       // If it is not lowercase look in the uppercase array
       index = upperCaseLetters.findIndex(alphabet => letter === alphabet);
       if (index !== -1) {
-        let newLetterIndex = index + key;
+        let newLetterIndex = (index + key) % 26;
         stringArr[i] = upperCaseLetters[newLetterIndex];
       } else {
           stringArr[i] = stringArr[i];
